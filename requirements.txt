@@ -1,6 +1,4 @@
 flask
 flask-smorest
 marshmallow
-Flask-JWT-Extended
-transformers
-torch
+safetensors

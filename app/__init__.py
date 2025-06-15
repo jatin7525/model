@@ -4,11 +4,8 @@ from app.api.routes import blp as ChatBlueprint
 
 def create_app():
     app = Flask(__name__)
-    app.config["JWT_SECRET_KEY"] = "super-secret-key")
-    app.config["JWT_SECRET_KEY"] = "super-secret-key"  # Change in prod
-
-    JWTManager(app)
-
+    app.config["JWT_SECRET_KEY"] = "super-secret-key"
+    
     # OpenAPI / Swagger docs config
     app.config["API_TITLE"] = "Jarvish LLM API"
     app.config["API_VERSION"] = "v1"
